@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+    --clr-primary: #6366F1;
+    --clr-gradient: var(clr-primary (s0 h50 l100));
+
+    --clr-gray100: #F3F6FF;
+    --clr-gray200: #EFF2FC;
+    --clr-gray300: #E2E5F1;
+    --clr-gray400: #D4D7E5;
+    --clr-gray500: #B4B7C9;
+    --clr-gray600: #9397AD;
+    --clr-gray700: #565973;
+    --clr-gray800: #33354D;
+    --clr-gray900: #0B0F19;
+
+    
+
+    --container-padding: 1rem;
+    --transition-time: all 0.2s; 
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body, section, div, header, footer, main, aside, nav, blockquote, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+
+        /*MOBILE LÄGE*/
+.body {
+    font-family: "Manrope", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.container {
+   width: 100%;
+   padding-left: var(--container-padding);
+   padding-right: var(--container-padding);
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+
+a {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--clr-gray);
+    text-decoration: underline;
+}
+
+/*knappar*/
+
+.btn-primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-gray100);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-gray600);
+    color: var(--clr-gray100)
+}
+
+.btn-primary i {
+    margin-right: 0.5rem;
+}
+
+.btn-mobile {
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+}
+
+
+/*switchen för darkmode */
+
+.btn-toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-toggle-switch .label {
+    display: none;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+}
+
+.toggle-switch input:checked + .slider {
+    background-color: var(--clr-primary);
+}
+.toggle-switch input:focus + .slider {
+    box-shadow: 0 0 1px var(--clr-primary);
+}
+.toggle-switch input:checked + .slider:before {
+    transform: translateX(18px);
+    background-color: var(--clr-gray100);
+}
+.toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-gray600);
+    transition: var(--transition-time);
+}
+.toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2.5px;
+    background-color: var(--clr-gray100);
+    transition: var(--transition-time);
+}
+.toggle-switch .slider.round {
+    border-radius: 35px;
+}
+.toggle-switch .slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+.navbar {
+    display: none;
+}
+
+.nav-link {
+    color: var(--clr-gray800);
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--clr-primary);
+    text-decoration: underline;
+}
+
+.active {
+    color: var(--clr-primary);
+    text-decoration: underline;
+}
+
+#signin-btn {
+    display: none;
+}
+
+header .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    grid-template-areas: "logo sw mobile";
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+}
+
+/*---------MOBILE LÄGE SLUT-----------*/
+
+        /* SURFPLATTSLÄGE */
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720;
+     }
+
+     .btn-toggle-switch .label {
+        display: block;
+    }
+
+    header .container {
+        gap: 3rem;
+    }
+}
+
+/*---------SURFPLATTSLÄGE SLUT--------*/
+
+        /* DESKTOP LÄGE */
+
+@media (min-width:1400px) {
+    .container {
+        max-width:1320px;
+     }
+
+    header .container {
+        grid-template-columns: auto 1fr auto auto;
+        gap: 2rem;
+    }
+
+    #signin-btn {
+        display: block;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+}
+
+/*---------DESKTOPLÄGE SLUT--------*/
+
+

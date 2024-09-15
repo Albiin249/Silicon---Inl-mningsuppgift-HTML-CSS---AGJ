@@ -41,6 +41,12 @@ body, section, div, header, footer, main, aside, nav, blockquote, p, span {
     font-size: 16px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 .container {
    width: 100%;
    padding-left: var(--container-padding);
@@ -185,6 +191,24 @@ header .container {
    
 }
 
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer .container {
+    font-size: 14px;
+    color: var(--clr-gray600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+
+}
+footer .credit {
+    display: none;
+}
+
 /*---------MOBILE LÄGE SLUT-----------*/
 
         /* SURFPLATTSLÄGE */
@@ -200,6 +224,11 @@ header .container {
 
     header .container {
         gap: 3rem;
+    }
+
+    
+    footer .credit {
+        display: block;
     }
 }
 

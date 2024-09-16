@@ -180,6 +180,8 @@ a:hover {
     display: none;
 }
 
+
+
 header .container {
     display: grid;
     align-items: center;
@@ -191,6 +193,8 @@ header .container {
    
 }
 
+
+
 footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -201,13 +205,44 @@ footer .container {
     color: var(--clr-gray600);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     gap: .2rem;
+    display: grid;
 
 }
+
 footer .credit {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+#brands {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.brand-box {
+    border: 1px solid var(--clr-gray300);
+    border-radius: 8px;
+    height: 100px;
+    width: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /*---------MOBILE LÄGE SLUT-----------*/
 
@@ -226,9 +261,28 @@ footer .credit {
         gap: 3rem;
     }
 
-    
+    footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     footer .credit {
         display: block;
+    }
+
+    .brand-box {
+        width: 158px;
+        height: 98px;  
+    }
+    #brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    #brand-5, #brand-6 {
+        display: none;
     }
 }
 
@@ -257,6 +311,16 @@ footer .credit {
     .navbar {
         display: block;
     }
+
+    #brand-5, #brand-6 {
+        display: flex;
+    }
+
+    .brand-box {
+        height: 100px;
+        width: 196px;  
+    }
+
 }
 
 /*---------DESKTOPLÄGE SLUT--------*/

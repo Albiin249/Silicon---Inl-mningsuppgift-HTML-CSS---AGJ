@@ -510,10 +510,15 @@ footer .credit {
 
 
 
+
+
+
+/* -------- APP FEATURES --------- */
+
 #app-features {
     
     .container { 
-
+        padding-bottom: 3rem;
         @media (min-width: 1400px) {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -580,7 +585,7 @@ footer .credit {
             display: inline-block;
             grid-area: imgs;
             display: grid;
-           
+            height: 683px;
            
         }
     }
@@ -641,3 +646,168 @@ footer .credit {
 
 
 }
+
+/* ------------- APP FEATURES KLAR ------------- */
+
+
+
+
+
+
+/* ------------- HOW DOES IT WORK ------------- */
+
+#howdoesitwork {
+
+    background-color: var(--clr-gray100);
+
+    .container {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 800;
+
+            @media (min-width: 768px) {
+                font-size: 33.5px;
+            }
+
+            @media (min-width: 1400px) {
+                font-size: 40px;
+                color: var(--clr-gray900);
+            }
+        }
+
+        .imgs-mobile {
+            .iphone-skal {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                position: absolute;
+                width: 270px;
+                height: 545px;
+            }
+            .iphone-innehall {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                position: relative;
+                width: 270px;
+                height: 545px;
+                
+            }
+            .imgs-tablet {
+                display: none;
+            }
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: center;
+                .imgs-tablet {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    display: block;
+                    width: 200px;
+                    height: 410px;
+                }
+                .iphone-skal, .iphone-innehall {
+                    width: 200px;
+                    height: 410px;
+                }
+            }
+
+            @media (min-width: 1400px) {
+                .imgs-tablet, .iphone-skal, .iphone-innehall {
+                    display: none;
+                }
+            }
+        }
+
+        .imgs-desktop {
+            display: none;
+
+            @media (min-width: 1400px) {
+
+                display: block;
+                
+                
+                .iphone-left {
+                    margin-right: 7rem;
+                    width: 292px;
+                    height: 630px;
+                }
+                .iphone-right {
+                    margin-left: 7rem;
+                    width: 292px;
+                    height: 630px;
+                }
+                .iphone-mid {
+                    margin: auto;
+                    width: 292px;
+                    height: 630px;
+                }
+            }
+        }
+
+        .mobile-h3 {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .desktop-h3,  .desktop-p, .tablet-h3, .tablet-p {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-h3 {
+                display: none;
+            }
+            .mobile-p {
+                display: none;
+            }
+
+            .tablet-h3 {
+                display: block;
+                width: 400px;
+                margin: auto;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                font-size: 22px;
+                font-weight: 800;
+                
+            }
+            .tablet-p {
+                width: 400px;
+                display: block;
+                margin: auto;
+            }
+        }
+        @media (min-width: 1400px) {
+            .tablet-h3, .tablet-p {
+                display: none;
+            }
+            .desktop-h3 {
+                display: block;
+                font-size: 24px;
+                font-weight: 800;
+                color: var(--clr-gray900);
+                
+                
+            }
+            .desktop-p {
+                display: block;
+                color: var(--clr-gray700);
+                width: 630px;
+                margin: auto;
+                padding-top: .1rem;
+                
+            }
+
+        }
+    }
+
+
+}
+
+/* ------------- HOW DOES IT WORK SLUT ------------- */

@@ -811,3 +811,160 @@ footer .credit {
 }
 
 /* ------------- HOW DOES IT WORK SLUT ------------- */
+
+
+
+
+
+/* ------------- SIDA 4 ------------- */
+
+#sidafyra {
+    display: none;
+
+    @media (min-width: 1400px) {
+        display: block;
+        
+        .container2 {
+            padding-left: 12rem;
+            padding-top: 4rem;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "information images"
+                                "images2 bankinfo";
+            .btn {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 159px;
+            height: 44px;
+            border: 1px ;
+            border-radius: 8%;
+            background-color: var(--clr-primary);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            span {
+                padding-right: .5rem;
+                }
+            }
+            .btn:hover {
+                background-color: var(--clr-gray600);
+                color: white;
+            }
+
+            .information {
+                margin-top: 3rem;
+                margin-left: 15rem;
+
+                width: 416px;
+                height: 302px;
+
+                grid-area: information;
+                
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 800;
+                    color: var(--clr-gray900);
+                }
+                ul {
+                    color: var(--clr-gray700);
+                    list-style:none;
+                    margin: 0; 
+                    padding: 0;
+                    padding-bottom: 2rem;
+                
+                    
+                }
+                ul li {
+                    background:url(images/circle.svg) no-repeat 0 0;
+                    padding-left: 1.5rem;
+                    
+                }
+
+                
+
+            }
+
+            .images {
+            
+                grid-area: images;
+                margin-left: 2rem;
+                
+
+                .inner {
+                    width: 416px;
+                    height: 393px;
+                    position: relative;
+                }
+                .outer {
+                    position: relative;
+                    width: 261px;
+                    height: 117px;
+                    bottom: 12%;
+                    left: 13%;
+                }
+            }
+
+            .images2 {
+                margin-left: 15rem;
+                width: 526px;
+                height: 500px;
+                
+                grid-area: images2;
+                
+                .contacts {
+                    width: 412px;
+                    height: 449px;
+                }
+                .card2 {
+                    position: relative;
+                    width: 350px;
+                    height: 260px;
+                    bottom: 70%;
+                    left: 23%;
+                }
+            }
+
+            .bankinfo {
+                margin-left: 1rem;
+                margin-top: 1rem;
+                grid-area: bankinfo;
+                
+                h2 {
+                    font-size: 32px;
+                    font-weight: 800;
+                    color: var(--clr-gray900);
+                }
+                .flex {
+                    display: flex;
+                    width: 530px;
+                    height: 154px;
+                }
+                .bank1 {
+                    width: 243px;
+                    height: 154px;
+                    padding-bottom: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    .payments1 {
+                        width: 60px;
+                    }
+                }
+                .bank2 {
+                    width: 243px;
+                    height: 154px;
+                    display: flex;
+                    flex-direction: column;
+                    .cashback1 {
+                        width: 60px;
+                    }
+                }
+            }
+
+            
+
+        }
+    }
+/* ------------- SIDA 4 SLUT ------------- */

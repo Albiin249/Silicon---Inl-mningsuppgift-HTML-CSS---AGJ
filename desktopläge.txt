@@ -1,0 +1,3 @@
+desktopläge
+Bilderna en kolumn, features och resten en kolumn.
+Grid för att bilden ska ta upp 1fr resten 2fr.

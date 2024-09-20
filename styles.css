@@ -825,8 +825,10 @@ footer .credit {
         display: block;
         
         .container2 {
-            padding-left: 12rem;
+            
             padding-top: 4rem;
+            width: 1080px;
+            height: 1080px;
             
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -854,8 +856,9 @@ footer .credit {
             }
 
             .information {
+                
                 margin-top: 3rem;
-                margin-left: 15rem;
+                margin-left: 8rem;
 
                 width: 416px;
                 height: 302px;
@@ -892,23 +895,25 @@ footer .credit {
                 grid-area: images;
                 margin-left: 2rem;
                 
+                
 
                 .inner {
                     width: 416px;
                     height: 393px;
                     position: relative;
+                    
                 }
                 .outer {
                     position: relative;
                     width: 261px;
                     height: 117px;
                     bottom: 12%;
-                    left: 13%;
+                    left: 40%;
                 }
             }
 
             .images2 {
-                margin-left: 15rem;
+                margin-left: 8rem;
                 width: 526px;
                 height: 500px;
                 
@@ -950,16 +955,22 @@ footer .credit {
                     flex-direction: column;
                     .payments1 {
                         width: 60px;
+                        padding-bottom: 1rem;
                     }
                 }
                 .bank2 {
-                    width: 243px;
+                    padding-left: 1rem;
+                    width: 260px;
                     height: 154px;
                     display: flex;
                     flex-direction: column;
                     .cashback1 {
                         width: 60px;
+                        padding-bottom: 1rem;
                     }
+                }
+                .btn-2 {
+                    margin-top: 2rem;
                 }
             }
 
@@ -967,4 +978,149 @@ footer .credit {
 
         }
     }
+}
 /* ------------- SIDA 4 SLUT ------------- */
+
+
+
+/* ------------- RECENSIONER------------- */
+
+
+#recensioner {
+    display: none;
+
+    @media (min-width: 1400px) {
+        display: block;
+        background-color: var(--clr-gray100);  
+
+        .container3 {
+            display: flex;
+        
+            .clients {
+                margin: auto;
+                width: 306px;
+                height: 104px;
+                h2 {
+                    position: relative;
+                    bottom: 135%;
+                    font-size: 40px;
+                    font-weight: 800;
+                }
+            }
+
+            .fannie {
+                margin: 1rem;
+                border-radius: 4%;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                width: 416px;
+                height: 280px;
+
+                .quotes {
+                    position: relative;
+                    bottom: 5%;
+                    left: 5%;
+                    width: 44px;
+                    height: 44px;
+                }
+                .rating {
+                    padding-left: 1rem;
+                    width: 88px;
+                    height: 16px;
+                }
+                .fannie-p {
+                    padding: 1rem;
+                    font-size: 18;
+                    color: var(--clr-gray700)
+                }
+
+
+                .fannie-footer {
+                    display: grid;
+                    grid-template-areas: "fannie-pic namn"
+                                         "fannie-pic undertext";
+
+                    .fannie-pic {
+                        grid-area: "fannie-pic";
+                        padding-left: 1rem;
+
+                    }
+                    .namn {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: var(--clr-gray900);
+                        grid-area: namn;
+                        padding-right: 12rem;
+
+                    }
+                    .undertext {
+                        position: relative;
+                        grid-area: undertext;
+                        font-size: 14px;
+                        color: var(--clr-gray600);
+                        bottom: 120%;
+                    }
+
+                }
+            }
+
+
+            .albert {
+                margin: 1rem;
+                border-radius: 4%;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                width: 416px;
+                height: 280px;
+
+                .quotes {
+                    position: relative;
+                    bottom: 5%;
+                    left: 5%;
+                    width: 44px;
+                    height: 44px;
+                }
+                .rating {
+                    padding-left: 1rem;
+                    width: 88px;
+                    height: 16px;
+                }
+                .albert-p {
+                    padding: 1rem;
+                    font-size: 18;
+                    color: var(--clr-gray700)
+                }
+
+
+                .albert-footer {
+                    display: grid;
+                    grid-template-areas: "albert-pic namn"
+                                         "albert-pic undertext";
+
+                     .albert-pic {
+                        grid-area: albert-pic;
+                        padding-left: 1rem;
+                     }
+                     .namn {
+                         font-size: 16px;
+                         font-weight: 700;
+                         color: var(--clr-gray900);
+                         grid-area: namn;
+                         padding-right: 14rem;
+                     }
+                     .undertext {
+                         position: relative;
+                         grid-area: undertext;
+                         font-size: 14px;
+                         color: var(--clr-gray600);
+
+                     }
+
+                }
+            }
+        }
+    }    
+
+}

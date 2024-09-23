@@ -309,8 +309,10 @@
             <div class="container">
                 
                 <div class="questions">
-                    <h2>Any questions?<br>Check out the FAQs</h2>
-                    <p>Still have unanswered questions and need to get in touch?</p>
+                    <h2 class="mobile-h2">Any questions? Check out the FAQs</h2>
+                    <h2 class="desktop-h2">Any questions?<br>Check out the FAQs</h2>
+                    <p class="mobile-p1">Still have unanswered questions and need to get in touch?</p>
+                    <p class="desktop-p1">Still have unanswered questions and need to get <br>in touch?</p>
                     <div class="boxes">
                         <div class="phone">
                             <img src="images/phone.svg" alt="Phone icon">
@@ -337,7 +339,8 @@
                 <div class="info-lista">
                     <details>
                         <summary>Is any of my personal information stored in the App?</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo enim molestias quo voluptatum! Corporis, cumque ipsum? Quod, mollitia iusto?</p>
+                        <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
+                        <p>Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer</p>
                     </details>
                     <details>
                         <summary>What formats can I download my transaction history in?</summary>
@@ -362,11 +365,37 @@
 
                 </div>
                 
+                <button class="btn-contact">Contact us now</button>
+
+                <div class="boxes-2">
+                    
+                    <div class="phone">
+                        <img src="images/phone.svg" alt="Phone icon">
+                        <p>Still have questions?</p>
+                        <a href="#" class="btn-3">
+                            <span>Contact us</span>
+                            <img src="/images/pil-2.svg" alt="Arrow in button">
+                        </a>
+                    </div>
+
+                    <div class="message">
+                        <img src="images/message.svg" alt="Message icon">
+                        <p>Don't like phone calls?</p>
+                        <a href="#" class="contact">
+                            <span>Contact us</span>
+                            <img  src="/images/pil-3.svg" alt="Arrow in button">
+                        </a>
+                    </div>
+
+                </div>
+
 
                 <div class="subscribe">
-                    <img class="bell-icon" src="images/notification.svg" alt="Notification bell icon">
-                    <h4>Subscribe to our newsletter to stay <br> informed about latest updates</h4>
-
+                    <div class="ikon-h4">
+                        <img class="bell-icon" src="images/notification.svg" alt="Notification bell icon">
+                        <h4 class = "desktop-h4">Subscribe to our newsletter to stay <br> informed about latest updates</h4>
+                        <h4 class = "mobile-h4">Subscribe to our<br>newsletter</h4>
+                    </div>
                     <div class="input-grp">
                         <img class="email-icon" src="images/bx-envelope.svg" alt="Email icon">
                         <input class="form-input" type="email" placeholder="Your Email">
